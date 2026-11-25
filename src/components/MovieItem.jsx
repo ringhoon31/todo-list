@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './TodoItem.css'
+import './MovieItem.css'
 
 const toInputDate = (time) => {
   const d = new Date(time)
@@ -10,7 +10,7 @@ const toInputDate = (time) => {
 }
 
 
-const TodoItem = ({ id, isDone, content, date, onUpdate,onDelete }) => {
+const MovieItem = ({ id, isDone, content, date, onUpdate,onDelete }) => {
 
   const [isEdit, setIsEdit] = useState(false)
   const [editContent, setEditContent] = useState(content)
@@ -35,7 +35,7 @@ const TodoItem = ({ id, isDone, content, date, onUpdate,onDelete }) => {
   }
 
   return (
-    <div className={`TodoItem ${isDone ? " isDone":""}`}>
+    <div className={`MovieItem ${isDone ? " isDone":""}`}>
       <input type="checkbox" checked={isDone} onChange={onChangeCheck} />
 
       {isEdit ? (
@@ -74,4 +74,4 @@ const TodoItem = ({ id, isDone, content, date, onUpdate,onDelete }) => {
   )
 }
 
-export default TodoItem
+export default MovieItem

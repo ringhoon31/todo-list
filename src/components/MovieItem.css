@@ -1,4 +1,4 @@
-.TodoItem {
+.MovieItem {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -6,18 +6,18 @@
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.TodoItem input {
+.MovieItem input {
     cursor: pointer;
     width: 18px;
     height: 18px;
     accent-color: gray;
 }
 
-.TodoItem .content {
+.MovieItem .content {
     flex: 1;
 }
 
-.TodoItem .date {
+.MovieItem .date {
     font-size: 14px;
     color: gray;
 }

@@ -1,23 +1,27 @@
-.TodoList {
+.MovieList {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.TodoList>input {
+.MovieList>input {
     border: none;
     border-bottom: 1px solid rgb(220, 220, 220);
     padding: 15px 0;
+    border-radius: 5px;
 }
 
-.TodoList>input:focus {
+.MovieList>input:focus {
     outline: none;
     border-bottom: 1px solid rgb(37, 147, 255);
 
 }
 
-.todos-wrapper{
+.Movies-wrapper{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.MovieList h4{
+    margin-top: -20px;
 }

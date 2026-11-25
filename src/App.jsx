@@ -1,6 +1,6 @@
 import Header from "./components/Header"
-import TodoEditor from "./components/TodoEditor"
-import TodoList from "./components/TodoList"
+import MovieEditor from "./components/MovieEditor"
+import MovieList from "./components/MovieList"
 import './App.css'
 import { useState, useRef } from "react"
 
@@ -8,19 +8,19 @@ const mockData = [
   {
     id: 0,
     isDone: false,
-    content: "React 공부하기",
+    content: "어벤져스 둠스데이",
     date: new Date().getTime()
   },
   {
     id: 1,
     isDone: false,
-    content: "운동하기",
+    content: "판타스틱4",
     date: new Date().getTime()
   },
   {
     id: 2,
     isDone: false,
-    content: "여행가기",
+    content: "마법사의 밤",
     date: new Date().getTime()
   }
 ]
@@ -28,40 +28,40 @@ const mockData = [
 
 function App() {
 
-  const [todos, setTodos] = useState(mockData)
+  const [Movies, setMovies] = useState(mockData)
   const idRef = useRef(3)
 
   const onCreate = (content) => {
-    const newTodo = {
+    const newMovie = {
       id: idRef.current++,
       isDone: false,
       content: content,
       date: new Date().getTime()
     }
 
-    setTodos([newTodo, ...todos])
+    setMovies([newMovie, ...Movies])
   }
 
   const onUpdate = (targetId, updates) => {
 
-    setTodos((prev) =>
-      prev.map((todo) =>
-        todo.id == targetId
-          ? { ...todo, ...updates }
-          : todo
+    setMovies((prev) =>
+      prev.map((Movie) =>
+        Movie.id == targetId
+          ? { ...Movie, ...updates }
+          : Movie
       )
     )
 
   }
 
   const onDelete=(targetId)=>{
-    setTodos(todos.filter((todo)=>todo.id!==targetId))
+    setMovies(Movies.filter((Movie)=>Movie.id!==targetId))
   }
   return (
     <div className="App">
       <Header />
-      <TodoEditor onCreate={onCreate} />
-      <TodoList todos={todos} onUpdate={onUpdate} onDelete={onDelete}/>
+      <MovieEditor onCreate={onCreate} />
+      <MovieList Movies={Movies} onUpdate={onUpdate} onDelete={onDelete}/>
     </div>
   )
 }

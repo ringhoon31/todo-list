@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
-import './TodoEditor.css'
-const TodoEditor = ({onCreate}) => {
+import './MovieEditor.css'
+const MovieEditor = ({onCreate}) => {
   const [content, setContent]=useState('')
   const inputRef = useRef()
 
@@ -31,10 +31,10 @@ const TodoEditor = ({onCreate}) => {
         value={content}
         onKeyDown={onKeyDown}
         onChange={onChangeContent}
-        placeholder='새로운 Todo...'/>
+        placeholder='보고싶은 영화를 입력해 보세요.'/>
         <button onClick={onSubmit}>추가</button>
     </div>
   )
 }
 
-export default TodoEditor
+export default MovieEditor
