@@ -1,0 +1,27 @@
+.MovieList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.MovieList>input {
+    border: none;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.MovieList>input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(37, 147, 255);
+
+}
+
+.Movies-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.MovieList h4{
+    margin-top: -20px;
+}
