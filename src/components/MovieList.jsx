@@ -23,8 +23,8 @@ const MovieList = ({ Movies ,onUpdate,onDelete}) => {
     const filteredMovies= filteredData()
     return (
         <div className='MovieList'>
-            <h2>🎥보고싶은 영화 목록🎥</h2>
-            <h4>🎞️영화를 봤으면 체크하면 되요🎞️</h4>
+            <h2>🎬보고싶은 영화 목록🎬</h2>
+            <h4>🎞️영화를 봤으면 체크하면 돼요🎞️</h4>
             <input type="text"
                 value={search}
                 onChange={onChangeSearch}

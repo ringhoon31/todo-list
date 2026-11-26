@@ -8,6 +8,7 @@
 
 .MovieItem input {
     cursor: pointer;
+
     width: 18px;
     height: 18px;
     accent-color: gray;
@@ -37,11 +38,11 @@
 }
 
 .updateBtn {
-    background-color:#475569;
+    background-color:#3B82F6;
 }
 
 .deleteBtn {
-    background-color: #7F1D1D;
+    background-color: #DC2626;
     color: #FCA5A5;
 }
 
