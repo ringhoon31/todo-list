@@ -37,11 +37,12 @@
 }
 
 .updateBtn {
-    background-color: rgb(83, 180, 45);
+    background-color:#475569;
 }
 
 .deleteBtn {
-    background-color: rgb(219, 48, 48);
+    background-color: #7F1D1D;
+    color: #FCA5A5;
 }
 
 .isDone .content,

@@ -22,6 +22,12 @@
     flex-direction: column;
     gap: 20px;
 }
+
 .MovieList h4{
     margin-top: -20px;
+   color: #94A3B8;
+}
+.MovieList h2, 
+.MovieList h4{
+    text-align: center;
 }
